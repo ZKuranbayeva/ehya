@@ -5,6 +5,41 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "HK Grotesk", sans-serif;
+  src: url(../fonts/HKGrotesk-Regular.woff2) format("woff2"), url(../fonts/HKGrotesk-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HK Grotesk", sans-serif;
+  src: url(../fonts/HKGrotesk-Bold.woff2) format("woff2"), url(../fonts/HKGrotesk-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2"), url(../fonts/OpenSans-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Semibold.woff2) format("woff2"), url(../fonts/OpenSans-Semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"), url(../fonts/OpenSans-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +47,10 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 p {
@@ -28,5 +67,42 @@ p {
 }
 
 .header-top {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+}
+.header-top__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.menu-list {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.menu-list__item {
+  font-weight: 600;
+  color: #183B56;
+  display: inline-flex;
+  align-items: center;
+}
+.menu-list__item svg {
+  position: relative;
+  left: 5px;
+  top: 2px;
+}
+.menu-list__item svg path {
+  stroke: currentColor;
+  transition: stroke 0.3s ease;
+}
+.menu-list__item:hover {
+  color: #1565D8;
+  fill: #1565D8;
+}
+
+.menu-btn {
+  font-weight: 700;
+  color: #1565D8;
+  padding: 13px 23px;
 }/*# sourceMappingURL=main.css.map */
