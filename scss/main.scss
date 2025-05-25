@@ -82,6 +82,7 @@ p{
 }
 
 .header {
+    margin-bottom: 108px;
 }
 .header-top {
     display: flex;
@@ -92,8 +93,6 @@ p{
             justify-content: space-between;
             gap: 40px;
 		}
-}
-.logo {
 }
 .menu-list {
     font-size: 16px;
@@ -132,4 +131,34 @@ p{
     background-size: cover;
     height: 100vh;
     background-position: center;
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+}
+.home-items {
+		&__heading {
+            font-family: variables.$main-font;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 68px;
+            letter-spacing: 0.2px;
+            color: variables.$dark-blue;
+            margin-bottom: 32px;
+		}
+		&__text {
+            font-size: 20px;
+            line-height: 36px;
+            margin-bottom: 30px;
+            max-width: 530px;
+		}
+		&__app {
+            display: flex;
+            gap: 16px;
+            height: 54px;
+		}
+		&__scroll {
+		}
+		&__phone {
+		}
 }

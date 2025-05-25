@@ -67,6 +67,10 @@ p {
   padding: 0 5px;
 }
 
+.header {
+  margin-bottom: 108px;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -114,4 +118,30 @@ p {
   background-size: cover;
   height: 100vh;
   background-position: center;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-items__heading {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-bottom: 32px;
+}
+.home-items__text {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+  max-width: 530px;
+}
+.home-items__app {
+  display: flex;
+  gap: 16px;
+  height: 54px;
 }/*# sourceMappingURL=main.css.map */
