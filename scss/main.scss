@@ -130,7 +130,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-position: center;
+    background-position: center bottom;
 }
 .home-content{
     display: flex;
@@ -155,10 +155,48 @@ p{
 		&__app {
             display: flex;
             gap: 16px;
-            height: 54px;
+            margin-bottom: 120px;
+
+            img{
+                height: 54px;
+            }
 		}
 		&__scroll {
-		}
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 12px;
+            }
+            span{
+                font-family: variables.$top-font;
+                font-size: 16px;
+                color: variables.$dark-blue;
+            }
+            .light-text{
+                color: variables.$light-grey;
+                margin-left: 5px;
+            }
+        }
 		&__phone {
 		}
+}
+
+.custom-shape-divider-bottom-1748246265 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1748246265 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1748246265 .shape-fill {
+    fill: #FFFFFF;
 }

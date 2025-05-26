@@ -117,7 +117,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .home-content {
@@ -143,5 +143,43 @@ p {
 .home-items__app {
   display: flex;
   gap: 16px;
+  margin-bottom: 120px;
+}
+.home-items__app img {
   height: 54px;
+}
+.home-items__scroll {
+  display: flex;
+  align-items: center;
+}
+.home-items__scroll img {
+  margin-right: 12px;
+}
+.home-items__scroll span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #183B56;
+}
+.home-items__scroll .light-text {
+  color: #5A7184;
+  margin-left: 5px;
+}
+.custom-shape-divider-bottom-1748246265 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1748246265 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1748246265 .shape-fill {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
